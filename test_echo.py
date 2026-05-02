@@ -50,5 +50,5 @@ def test_post_with_body_form():
     data={'id':'test001'}
     post_response = requests.post(f'{API_URL_POST}', json=data)
     actual_json = post_response.json()
-    assert post_response.status_code==200 and  actual_json['data'] == {'id': 'test0010'}
+    assert post_response.status_code==200 and  actual_json['data'] == {'id': 'test001'}
 
